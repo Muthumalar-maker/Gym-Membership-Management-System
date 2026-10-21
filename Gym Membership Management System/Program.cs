@@ -217,9 +217,15 @@ namespace Gym_Membership_Management_System
                             output.Display("Data saved to gymdata.json.");
                             break;
 
+                        //case 0:
+                        //    storage.SaveData(data);
+                        //    output.Display("Data saved. Exiting application.");
+                        //    return;
+
                         case 0:
                             storage.SaveData(data);
-                            output.Display("Data saved. Exiting application.");
+                            output.Display("Data saved successfully.");
+                            output.OpenOutputFile();
                             return;
 
                         default:
@@ -235,5 +241,3 @@ namespace Gym_Membership_Management_System
         }
     }
 }
-
-
